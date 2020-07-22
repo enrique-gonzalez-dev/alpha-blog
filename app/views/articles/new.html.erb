@@ -1,23 +1,7 @@
-<h1>Create a new article</h1>
 
-<%= form_with scope: :article, url: articles_path, local: true do |f| %>
-
-  <p>
-    <%= f.label :title %><br/>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :description %><br/>
-    <%= f.text_area :description %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-  <p> 
-    <%= link_to 'Cancel', articles_path %> 
-  </p>
-
-
-<% end %>
+<div id="page-content">
+  <h1 class="text-center h1-index">Create new article</h1>
+  <div class="container">
+    <%= render 'form' %> 
+  </div>
+</div>
